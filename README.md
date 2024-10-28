@@ -1,7 +1,4 @@
-<p class="center">
-  <img src="https://github.com/cosmic-zip/kokai/blob/feature/fork-cleanup/docs/branding/kokai.png?raw=true">
-  ![banner](docs/branding/banner.jpg)
-</p>
+![banner](docs/branding/banner.jpg)
 
 # Kõkai
 
