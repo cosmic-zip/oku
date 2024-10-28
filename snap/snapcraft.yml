@@ -1,0 +1,42 @@
+name: kokai
+version: "0.18.7"
+summary: Kõkai
+description: |
+  **Kõkai** - A web browser with an emphasis on local-first data storage using ipfs
+
+grade: stable
+confinement: strict
+base: core24
+platforms:
+  amd64:
+    build-on: [amd64]
+    build-for: [amd64]
+  arm64:
+    build-on: [arm64]
+    build-for: [arm64]
+
+parts:
+  kokai:
+    plugin: rust
+    source: ./browser
+    build-packages:
+      - build-essential
+      - clang
+      - cmake
+      - git
+      - libssl-dev
+      - libgtk-3-dev
+      - libsoup2.4-dev
+      - libwebkit2gtk-4.1-dev
+      - libudev-dev
+      - llvm
+      - pkg-config
+      - zlib1g-dev
+      - curl
+      - libgtk-4-dev
+      - libgraphene-1.0-dev
+
+apps:
+  kokai:
+    command: bin/kokai
+    plugs: [network, network-bind]

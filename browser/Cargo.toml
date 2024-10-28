@@ -1,7 +1,10 @@
 [package]
-name = "oku"
-version = "0.1.0"
-authors = ["Emil Sayahi <limesayahi@gmail.com>"]
+name = "kokai"
+version = "0.1.5"
+authors = [
+    "Emil Sayahi <limesayahi@gmail.com>",
+    "cosmic-zip <36008397+cosmic-zip@users.noreply.github.com>",
+]
 edition = "2021"
 license = "AGPL-3.0-or-later"
 description = "A Web browser with an emphasis on local-first data storage"
