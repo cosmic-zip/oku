@@ -5006,7 +5006,7 @@ dependencies = [
 [[package]]
 name = "oku-fs"
 version = "0.1.0"
-source = "git+https://github.com/OkuBrowser/oku-fs#df8695d6622caec020e645512c2dfee0d83ff8b8"
+source = "git+https://github.com/cosmic-zip/oku-fs#df8695d6622caec020e645512c2dfee0d83ff8b8"
 dependencies = [
  "anyhow",
  "async-trait",

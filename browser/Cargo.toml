@@ -5,7 +5,7 @@ authors = ["Emil Sayahi <limesayahi@gmail.com>"]
 edition = "2021"
 license = "AGPL-3.0-or-later"
 description = "A Web browser with an emphasis on local-first data storage"
-repository = "https://github.com/OkuBrowser/oku"
+repository = "https://github.com/cosmic-zip/oku"
 homepage = "https://okubrowser.github.io/"
 readme = "README.md"
 resolver = "2"
@@ -28,7 +28,7 @@ gtk = { version = "*", package = "gtk4", features = [
 ipfs = { git = "https://github.com/dariusc93/rust-ipfs.git", branch = "libp2p-next", package = "rust-ipfs" }
 lazy_static = "1.5.0"
 libadwaita = { version = "*", features = ["v1_6", "gio_v2_80"] }
-oku-fs = { git = "https://github.com/OkuBrowser/oku-fs", features = ["fuse"] }
+oku-fs = { git = "https://github.com/cosmic-zip/oku-fs", features = ["fuse"] }
 # oku-fs = { path = "/home/emil/Documents/GitHub/oku-fs", features = ["fuse"] }
 pango = { version = "*" }
 url = "2.5.2"
@@ -63,42 +63,45 @@ tantivy = "0.22.0"
 
 [profile.release]
 codegen-units = 1
-opt-level = 3
-lto = true
-debug = 0
-panic = 'abort'
+lto = "fat"
+panic = "abort"
+strip = true
+opt-level = "z"
 
-[package.metadata.deb]
-section = "utility"
-priority = "optional"
-assets = [
-    [
-        "target/x86_64-unknown-linux-gnu/release/oku",
-        "usr/bin/",
-        "755",
-    ],
-    [
-        "README.md",
-        "usr/share/doc/oku/README",
-        "644",
-    ],
-    [
-        "COPYING",
-        "usr/share/doc/oku/COPYING",
-        "644",
-    ],
-    [
-        "data/hicolor/**/*",
-        "/usr/share/icons/hicolor/",
-        "644",
-    ],
-]
+[profile.dev]
+opt-level = "z"
 
-[package.metadata.rpm]
-package = "oku"
+# [package.metadata.deb]
+# section = "utility"
+# priority = "optional"
+# assets = [
+#     [
+#         "target/x86_64-unknown-linux-gnu/release/oku",
+#         "usr/bin/",
+#         "755",
+#     ],
+#     [
+#         "README.md",
+#         "usr/share/doc/oku/README",
+#         "644",
+#     ],
+#     [
+#         "COPYING",
+#         "usr/share/doc/oku/COPYING",
+#         "644",
+#     ],
+#     [
+#         "data/hicolor/**/*",
+#         "/usr/share/icons/hicolor/",
+#         "644",
+#     ],
+# ]
 
-[package.metadata.rpm.cargo]
-buildflags = ["--release"]
+# [package.metadata.rpm]
+# package = "oku"
 
-[package.metadata.rpm.targets]
-oku = { path = "/usr/bin/oku" }
+# [package.metadata.rpm.cargo]
+# buildflags = ["--release"]
+
+# [package.metadata.rpm.targets]
+# oku = { path = "/usr/bin/oku" }
