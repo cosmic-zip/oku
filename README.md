@@ -1,11 +1,15 @@
-# Oku
+<p class="center">
+  <img src="https://github.com/cosmic-zip/kokai/blob/feature/fork-cleanup/docs/branding/kokai.png?raw=true">
+</p>
+
+# Kõkai
 
 A Web browser with an emphasis on local-first data storage.
 
 # Building
 
-Note: Currently, the Oku browser is only available on operating systems using the Linux kernel.
-The [protocol included with Oku](https://github.com/OkuBrowser/oku-fs) may be used via a command-line frontend, available on Linux, macOS, and Windows.
+Note: Currently, the Kõkai browser is only available on operating systems using the Linux kernel.
+The [protocol included with Kõkai](https://github.com/cosmic-zip/oku-fs) may be used via a command-line frontend, available on Linux, macOS, and Windows.
 
 ## Binary
 
@@ -34,7 +38,7 @@ After pre-requisites are installed and pre-compilation tasks are complete, you m
 
 - `cargo build` for debug builds.
 - `cargo build --release` for release builds.
-- `cargo install --path .` to install Oku.
+- `cargo install --path .` to install Kõkai.
 
 ---
 
