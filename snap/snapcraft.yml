@@ -1,6 +1,7 @@
 name: kokai
-version: "0.18.7"
+version: "0.2.0"
 summary: Kõkai
+icon: "docs/brading/kokai.png"
 description: |
   **Kõkai** - A web browser with an emphasis on local-first data storage using ipfs
 
