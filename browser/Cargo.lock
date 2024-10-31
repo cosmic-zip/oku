@@ -255,7 +255,7 @@ dependencies = [
  "cfg-if",
  "concurrent-queue",
  "futures-io",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "parking",
  "polling",
  "rustix",
@@ -397,7 +397,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f1f7a89a8ee5889d2593ae422ce6e1bb03e48a0e8a16e4fa0882dfcbe7e182ef"
 dependencies = [
  "bytes",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "genawaiter",
  "iroh-blake3",
  "iroh-io",
@@ -591,9 +591,9 @@ dependencies = [
 
 [[package]]
 name = "cairo-rs"
-version = "0.20.1"
+version = "0.20.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e8a0ea147c94108c9613235388f540e4d14c327f7081c9e471fc8ee8a2533e69"
+checksum = "d7fa699e1d7ae691001a811dda5ef0e3e42e1d4119b26426352989df9e94e3e6"
 dependencies = [
  "bitflags 2.6.0",
  "cairo-sys-rs",
@@ -699,6 +699,12 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
+
+[[package]]
+name = "cfg_aliases"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "613afe47fcd5fac7ccf1db93babcb082c5994d996f20b8b159f2ad1658eb5724"
 
 [[package]]
 name = "chacha20"
@@ -1759,9 +1765,9 @@ dependencies = [
 
 [[package]]
 name = "futures-lite"
-version = "2.3.0"
+version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "52527eb5074e35e9339c6b4e8d12600c7128b68fb25dcb9fa9dec18f7c25f3a5"
+checksum = "3f1fa2f9765705486b33fd2acf1577f8ec449c2ba1f318ae5447697b7c08d210"
 dependencies = [
  "fastrand 2.1.1",
  "futures-core",
@@ -1997,9 +2003,9 @@ checksum = "07e28edb80900c19c28f1072f2e8aeca7fa06b23cd4169cefe1af5aa3260783f"
 
 [[package]]
 name = "gio"
-version = "0.20.4"
+version = "0.20.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b8d999e8fb09583e96080867e364bc1e701284ad206c76a5af480d63833ad43c"
+checksum = "d8569975884fdfdbed536b682448fbd8c70bafbd69cac2d45eb1a7a372702241"
 dependencies = [
  "futures-channel",
  "futures-core",
@@ -2014,9 +2020,9 @@ dependencies = [
 
 [[package]]
 name = "gio-sys"
-version = "0.20.4"
+version = "0.20.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4f7efc368de04755344f0084104835b6bb71df2c1d41e37d863947392a894779"
+checksum = "217f464cad5946ae4369c355155e2d16b488c08920601083cb4891e352ae777b"
 dependencies = [
  "glib-sys",
  "gobject-sys",
@@ -2027,9 +2033,9 @@ dependencies = [
 
 [[package]]
 name = "glib"
-version = "0.20.4"
+version = "0.20.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "adcf1ec6d3650bf9fdbc6cee242d4fcebc6f6bfd9bea5b929b6a8b7344eb85ff"
+checksum = "358431b0e0eb15b9d02db52e1f19c805b953c5c168099deb3de88beab761768c"
 dependencies = [
  "bitflags 2.6.0",
  "futures-channel",
@@ -2048,9 +2054,9 @@ dependencies = [
 
 [[package]]
 name = "glib-macros"
-version = "0.20.4"
+version = "0.20.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a6bf88f70cd5720a6197639dcabcb378dd528d0cb68cb1f45e3b358bcb841cd7"
+checksum = "e7d21ca27acfc3e91da70456edde144b4ac7c36f78ee77b10189b3eb4901c156"
 dependencies = [
  "heck 0.5.0",
  "proc-macro-crate 3.2.0",
@@ -2061,9 +2067,9 @@ dependencies = [
 
 [[package]]
 name = "glib-sys"
-version = "0.20.4"
+version = "0.20.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5f9eca5d88cfa6a453b00d203287c34a2b7cac3a7831779aa2bb0b3c7233752b"
+checksum = "8a5911863ab7ecd4a6f8d5976f12eeba076b23669c49b066d877e742544aa389"
 dependencies = [
  "libc",
  "system-deps",
@@ -2893,7 +2899,7 @@ dependencies = [
  "bytes",
  "derive_more",
  "futures-buffered",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "futures-util",
  "genawaiter",
  "hex",
@@ -2981,7 +2987,7 @@ dependencies = [
  "chrono",
  "derive_more",
  "futures-buffered",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "genawaiter",
  "hashlink",
  "hex",
@@ -3023,7 +3029,7 @@ dependencies = [
  "derive_more",
  "ed25519-dalek",
  "futures-buffered",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "futures-util",
  "hex",
  "iroh-base",
@@ -3062,7 +3068,7 @@ dependencies = [
  "derive_more",
  "ed25519-dalek",
  "futures-concurrency",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "futures-util",
  "indexmap",
  "iroh-base",
@@ -3085,7 +3091,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "17e302c5ad649c6a7aa9ae8468e1c4dc2469321af0c6de7341c1be1bdaab434b"
 dependencies = [
  "bytes",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "pin-project",
  "smallvec",
  "tokio",
@@ -3127,7 +3133,7 @@ dependencies = [
  "duct",
  "futures-buffered",
  "futures-concurrency",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "futures-sink",
  "futures-util",
  "genawaiter",
@@ -3499,9 +3505,9 @@ dependencies = [
 
 [[package]]
 name = "libm"
-version = "0.2.10"
+version = "0.2.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a00419de735aac21d53b0de5ce2c03bd3627277cf471300f27ebc89f7d828047"
+checksum = "8355be11b20d696c8f18f6cc018c4e372165b1fa8126cef092399c9951984ffa"
 
 [[package]]
 name = "libp2p"
@@ -3913,7 +3919,7 @@ dependencies = [
 [[package]]
 name = "libp2p-relay-manager"
 version = "0.3.0"
-source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#34c1f7cb98541a6432273ec6bee9b416ce05f190"
+source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#ac58681388d8f5d080707263b024cd220c68047e"
 dependencies = [
  "anyhow",
  "futures",
@@ -5430,9 +5436,9 @@ dependencies = [
 
 [[package]]
 name = "pollable-map"
-version = "0.1.0-alpha"
+version = "0.1.0-alpha.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fd72e3de13f84c361bcfc905e3fd0dcfbbc68a983a4bcb7382805ada3ab1779"
+checksum = "725f80d816cdea0b38b748783af2e978e42174c506c7e4ae19ede0d937032c60"
 dependencies = [
  "futures",
 ]
@@ -5723,7 +5729,7 @@ dependencies = [
  "derive_more",
  "educe",
  "flume",
- "futures-lite 2.3.0",
+ "futures-lite 2.4.0",
  "futures-sink",
  "futures-util",
  "hex",
@@ -5815,10 +5821,11 @@ dependencies = [
 
 [[package]]
 name = "quinn-udp"
-version = "0.5.5"
+version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4fe68c2e9e1a1234e218683dbdf9f9dfcb094113c5ac2b938dfcb9bab4c4140b"
+checksum = "e346e016eacfff12233c243718197ca12f148c84e1e84268a896699b41c71780"
 dependencies = [
+ "cfg_aliases",
  "libc",
  "once_cell",
  "socket2",
@@ -6085,9 +6092,9 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 
 [[package]]
 name = "reqwest"
-version = "0.12.8"
+version = "0.12.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f713147fbe92361e52392c73b8c9e48c04c6625bce969ef54dc901e58e042a7b"
+checksum = "a77c62af46e79de0a562e1a9849205ffcb7fc1238876e9bd743357570e04046f"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -6249,8 +6256,8 @@ dependencies = [
 
 [[package]]
 name = "rust-ipfs"
-version = "0.12.1"
-source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#34c1f7cb98541a6432273ec6bee9b416ce05f190"
+version = "0.12.2"
+source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#ac58681388d8f5d080707263b024cd220c68047e"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -6318,7 +6325,7 @@ dependencies = [
 [[package]]
 name = "rust-ipns"
 version = "0.6.0"
-source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#34c1f7cb98541a6432273ec6bee9b416ce05f190"
+source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#ac58681388d8f5d080707263b024cd220c68047e"
 dependencies = [
  "cbor4ii 0.3.3",
  "chrono",
@@ -6345,7 +6352,7 @@ dependencies = [
 [[package]]
 name = "rust-unixfs"
 version = "0.5.0"
-source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#34c1f7cb98541a6432273ec6bee9b416ce05f190"
+source = "git+https://github.com/dariusc93/rust-ipfs.git?branch=libp2p-next#ac58681388d8f5d080707263b024cd220c68047e"
 dependencies = [
  "either",
  "filetime",
@@ -6630,9 +6637,9 @@ dependencies = [
 
 [[package]]
 name = "serde"
-version = "1.0.213"
+version = "1.0.214"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ea7893ff5e2466df8d720bb615088341b295f849602c6956047f8f80f0e9bc1"
+checksum = "f55c3193aca71c12ad7890f1785d2b73e1b9f63a0bbc353c08ef26fe03fc56b5"
 dependencies = [
  "serde_derive",
 ]
@@ -6687,9 +6694,9 @@ dependencies = [
 
 [[package]]
 name = "serde_derive"
-version = "1.0.213"
+version = "1.0.214"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7e85ad2009c50b58e87caa8cd6dac16bdf511bbfb7af6c33df902396aa480fa5"
+checksum = "de523f781f095e28fa605cdce0f8307e451cc0fd14e2eb4cd2e98a355b147766"
 dependencies = [
  "proc-macro2",
  "quote",
